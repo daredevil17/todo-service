@@ -1,6 +1,7 @@
 Pre-requisite
 1. Download Proto compiler
 2. get Go lang proto compiler 
+<br/>
 <code>go get -u github.com/golang/protobuf/protoc-gen-go</code>
 
 3. Install MYSQL database
@@ -19,6 +20,7 @@ CREATE TABLE `ToDo` (
 </code>
 <br/>
 6. Install grpc-gateway and swagger documentation generation plugin
+<br/>
 <code>
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 </code>
