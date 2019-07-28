@@ -1,10 +1,14 @@
 # Pre-requisite
-1. Download Proto compiler
-2. get Go lang proto compiler 
+-  Download Proto compiler
+-  Get Go lang proto compiler
+<br/>
 <code>go get -u github.com/golang/protobuf/protoc-gen-go</code>
-3. Install MYSQL database
-4. Create database "testdb"
-5. Create table 
+
+- Install mysql golang package
+<code>go get -u github.com/go-sql-driver/mysql</code>
+-  Install MYSQL database
+-  Create database "testdb"
+-  Create table 
 <code>
 CREATE TABLE `ToDo` (
   `ID` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -15,7 +19,8 @@ CREATE TABLE `ToDo` (
   UNIQUE KEY `ID_UNIQUE` (`ID`)
 );
 </code>
-6. Install grpc-gateway and swagger documentation generation plugin
+<br/>
+- Install grpc-gateway and swagger documentation generation plugin
 <code>
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 </code>
