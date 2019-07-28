@@ -17,9 +17,8 @@ CREATE TABLE `ToDo` (
   UNIQUE KEY `ID_UNIQUE` (`ID`)
 );
 </code>
-
-6. Install grpc-gateway and swagger documentation generation plugin
 <br/>
+6. Install grpc-gateway and swagger documentation generation plugin
 <code>
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 </code>
