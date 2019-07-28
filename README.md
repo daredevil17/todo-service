@@ -1,4 +1,4 @@
-#Pre-requisite
+# Pre-requisite
 1. Download Proto compiler
 2. get Go lang proto compiler 
 <br/>
