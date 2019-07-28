@@ -7,6 +7,7 @@ Pre-requisite
 4. Create database "testdb"
 5. Create table 
 <code>
+<br/>
 CREATE TABLE `ToDo` (
   `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `Title` varchar(200) DEFAULT NULL,
@@ -21,6 +22,9 @@ CREATE TABLE `ToDo` (
 <br/>
 <code>
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
+</code>
+<br/>
+<code>
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
 </code>
 
