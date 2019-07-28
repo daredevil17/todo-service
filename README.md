@@ -18,9 +18,11 @@ CREATE TABLE `ToDo` (
 </code>
 
 6. Install grpc-gateway and swagger documentation generation plugin
+<br/>
+<code>
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
-
+</code>
 
 
 # todo-service
