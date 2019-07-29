@@ -1,5 +1,5 @@
 FROM golang
-ENV GOPATH="/go/bin"
+ENV GOPATH="/go"
 ENV GO_PATH="/go"
 #ENV GOBIN="/go/bin"
 WORKDIR /go/src
