@@ -7,7 +7,7 @@ import (
 	"os"
 	"os/signal"
 
-	"bitbucket-repository-management-service/dm/grpc/service"
+	"todo-service/dm/grpc/service"
 
 	"google.golang.org/grpc"
 )

@@ -41,3 +41,28 @@ go run cmd/grpc/server/server-todo-main.go -grpc-port=9090 -http-port=8080 -db-h
 #client grpc test
 #cd todo-service/cmd/grpc/client/
 #go run client-todo-main.go -server=localhost:9090
+
+
+# Docker commands
+
+- list of all docker images
+docker images
+
+- view all running docker containers 
+docker ps -a
+
+- remove docker image
+docker rm <container Id>
+docker rmi go-todo-service:0.1
+
+- removing a pattern image
+docker ps -a | grep "<pattern" | awk '{print $2}' | xargs docker rmi
+
+- create image
+docker build -t go-todo-service:0.1 .
+
+- running docker command
+docker run  <image name>
+e.g.: docker run -it  go-todo-service:0.1
+
+- 
