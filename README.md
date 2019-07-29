@@ -32,7 +32,7 @@ go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
 
 # todo-service
 #server start
-go run cmd/grpc/server/server-todo-main.go -grpc-port=9090 -http-port=8080 -db-host=127.0.0.1:3306 -db-user=root -db-password=<pass> -db-schema=testdb
+go run cmd/grpc/server/server-todo-main.go -grpc-port=9090 -http-port=8080 -db-host=docker.for.mac.localhost:3306 -db-user=root -db-password=<pass> -db-schema=testdb
 
 #client rest test
 #cd todo-service/cmd/client-rest

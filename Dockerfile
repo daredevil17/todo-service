@@ -14,5 +14,5 @@ WORKDIR /go/src/todo-service
 RUN dep ensure
 RUN pwd
 RUN apt-get update && apt-get install -y vim
-EXPOSE 9090 8080 7000
+EXPOSE 9090 8080 7000 3306
 
