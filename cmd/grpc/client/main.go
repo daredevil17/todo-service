@@ -10,7 +10,7 @@ import (
 	"google.golang.org/grpc"
 )
 
-func mainOld() {
+func main() {
 	serverAddress := "localhost:7000"
 
 	conn, e := grpc.Dial(serverAddress, grpc.WithInsecure())

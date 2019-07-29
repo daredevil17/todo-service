@@ -1,0 +1,1 @@
+go run cmd/grpc/server/main.go 
