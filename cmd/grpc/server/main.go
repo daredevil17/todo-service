@@ -10,8 +10,7 @@ import (
 	"google.golang.org/grpc"
 )
 
-//func mail() {
-func mainOld() {
+func main() {
 	netListener := getNetListener(7000)
 	grpcServer := grpc.NewServer()
 

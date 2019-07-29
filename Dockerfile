@@ -1,7 +1,6 @@
 FROM golang
 ENV GOPATH="/go"
 ENV GO_PATH="/go"
-#ENV GOBIN="/go/bin"
 WORKDIR /go/src
 RUN pwd
 RUN git clone https://github.com/daredevil17/todo-service.git
