@@ -1,9 +1,11 @@
 package cmd
 
 import (
-	"bitbucket-repository-management-service/dm/grpc/impl"
-	"bitbucket-repository-management-service/pkg/protocol/grpc"
-	"bitbucket-repository-management-service/pkg/protocol/rest"
+
+        //local packages
+	"todo-service/dm/grpc/impl"
+	"todo-service/pkg/protocol/grpc"
+	"todo-service/pkg/protocol/rest"
 
 	"context"
 	"database/sql"
