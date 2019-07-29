@@ -59,7 +59,7 @@ docker rmi go-todo-service:0.1
 docker ps -a | grep "<pattern" | awk '{print $2}' | xargs docker rmi
 
 - create image
-docker build -t go-todo-service:0.1 .
+docker image build --no-cache -t go-todo-service:0.2 .
 
 - running docker command
 docker run  <image name>

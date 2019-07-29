@@ -1,6 +1,5 @@
 syntax = "proto3";
 package service;
-//import "bitbucket-repository-management-service/dm/proto-files/domain/todo.proto";
 import "todo.proto";
 import "google/api/annotations.proto";
 import "protoc-gen-swagger/options/annotations.proto";

@@ -1,13 +1,13 @@
 package rest
 
 import (
-	"bitbucket-repository-management-service/dm/grpc/service"
 	"context"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"time"
+	"todo-service/dm/grpc/service"
 
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"google.golang.org/grpc"
