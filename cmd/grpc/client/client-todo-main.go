@@ -9,8 +9,8 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	"google.golang.org/grpc"
 
-	"bitbucket-repository-management-service/dm/grpc/domain"
-	"bitbucket-repository-management-service/dm/grpc/service"
+	"todo-service/dm/grpc/domain"
+	"todo-service/dm/grpc/service"
 )
 
 const (

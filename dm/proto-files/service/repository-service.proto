@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package service;
 
-option go_package = "bitbucket-repository-management-service/dm/grpc/service";
+option go_package = "todo-service/dm/grpc/service";
 
-import "bitbucket-repository-management-service/dm/proto-files/domain/repository.proto";
+import "todo-service/dm/proto-files/domain/repository.proto";
 
 //RepositoryService Definition
 service RepositoryService {

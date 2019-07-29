@@ -10,8 +10,8 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"bitbucket-repository-management-service/dm/grpc/domain"
-	"bitbucket-repository-management-service/dm/grpc/service"
+	"todo-service/dm/grpc/domain"
+	"todo-service/dm/grpc/service"
 )
 
 const (

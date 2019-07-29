@@ -1,11 +1,11 @@
 package main
 
 import (
-	"bitbucket-repository-management-service/dm/grpc/impl"
-	"bitbucket-repository-management-service/dm/grpc/service"
 	"fmt"
 	"log"
 	"net"
+	"todo-service/dm/grpc/impl"
+	"todo-service/dm/grpc/service"
 
 	"google.golang.org/grpc"
 )

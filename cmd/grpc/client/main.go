@@ -1,8 +1,8 @@
 package main
 
 import (
-	"bitbucket-repository-management-service/dm/grpc/domain"
-	"bitbucket-repository-management-service/dm/grpc/service"
+	"todo-service/dm/grpc/domain"
+	"todo-service/dm/grpc/service"
 
 	"context"
 	"fmt"

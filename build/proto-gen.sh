@@ -1,5 +1,5 @@
 export GO_PATH=$HOME/workspace/Go
-export PROTO_PATH=$GO_PATH/src/bitbucket-repository-management-service/dm/proto-files
+export PROTO_PATH=$GO_PATH/src/todo-service/dm/proto-files
 #add this path to ensure all protoc plugins can execute
 export PATH=$PATH:$GO_PATH/bin 
 

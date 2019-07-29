@@ -1,11 +1,11 @@
 package impl
 
 import (
-	"bitbucket-repository-management-service/dm/grpc/domain"
-	"bitbucket-repository-management-service/dm/grpc/service"
 	"context"
 	"log"
 	"strconv"
+	"todo-service/dm/grpc/domain"
+	"todo-service/dm/grpc/service"
 )
 
 //RepositoryServiceGrpcImpl is a implementation of RepositoryService Grpc Service.

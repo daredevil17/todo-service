@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package domain;
 
-option go_package = "bitbucket-repository-management-service/dm/grpc/domain";
+option go_package = "todo-service/dm/grpc/domain";
 
 message Repository {
 	int64 id  = 1;

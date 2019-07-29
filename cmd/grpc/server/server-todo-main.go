@@ -1,9 +1,9 @@
 package main
 
 import (
-	cmd "bitbucket-repository-management-service/pkg/cmd/server"
 	"fmt"
 	"os"
+	cmd "todo-service/pkg/cmd/server"
 )
 
 func main() {

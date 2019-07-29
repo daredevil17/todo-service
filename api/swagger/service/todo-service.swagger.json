@@ -4,8 +4,8 @@
     "title": "ToDo service",
     "version": "1.0",
     "contact": {
-      "name": "go-grpc-http-rest-microservice-tutorial project",
-      "url": "https://github.com/daredevil17/bitbucket-repository-management-service",
+      "name": "todo service project",
+      "url": "https://github.com/daredevil17/todo-service",
       "email": "test@test.com"
     }
   },
@@ -85,6 +85,44 @@
       }
     },
     "/todo/{id}": {
+      "get": {
+        "summary": "Read todo task",
+        "operationId": "Read",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/domainReadResponse"
+            }
+          },
+          "404": {
+            "description": "Returned when the resource does not exist.",
+            "schema": {
+              "format": "string"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Unique integer identifier of the todo task",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          },
+          {
+            "name": "api",
+            "description": "API versioning: it is my best practice to specify version explicitly.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ToDoService"
+        ]
+      },
       "delete": {
         "summary": "Delete todo task",
         "operationId": "Delete",
@@ -117,45 +155,6 @@
             "in": "query",
             "required": false,
             "type": "string"
-          }
-        ],
-        "tags": [
-          "ToDoService"
-        ]
-      },
-      "post": {
-        "summary": "Read todo task",
-        "operationId": "Read",
-        "responses": {
-          "200": {
-            "description": "A successful response.",
-            "schema": {
-              "$ref": "#/definitions/domainReadResponse"
-            }
-          },
-          "404": {
-            "description": "Returned when the resource does not exist.",
-            "schema": {
-              "format": "string"
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "description": "Unique integer identifier of the todo task",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "format": "int64"
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/domainReadRequest"
-            }
           }
         ],
         "tags": [
@@ -305,21 +304,6 @@
         }
       },
       "title": "Contains list of all todo tasks"
-    },
-    "domainReadRequest": {
-      "type": "object",
-      "properties": {
-        "api": {
-          "type": "string",
-          "title": "API versioning: it is my best practice to specify version explicitly"
-        },
-        "id": {
-          "type": "string",
-          "format": "int64",
-          "title": "Unique integer identifier of the todo task"
-        }
-      },
-      "title": "Request data to read todo task"
     },
     "domainReadResponse": {
       "type": "object",

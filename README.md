@@ -1,6 +1,7 @@
 # Pre-requisite
--  Download Proto compiler
--  Get Go lang proto compiler
+- Install Go 
+- Download Proto compiler
+- Get Go lang proto compiler package
 <br/>
 <code>go get -u github.com/golang/protobuf/protoc-gen-go</code>
 
