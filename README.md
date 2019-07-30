@@ -65,4 +65,12 @@ docker image build --no-cache -t go-todo-service:0.2 .
 docker run  <image name>
 e.g.: docker run -it  go-todo-service:0.1
 
-- 
+- Image creation for docker hub
+docker image build --no-cache -t akumar75/go-todo-service:0.2 .
+
+- pushing image to docker hub
+docker push akumar75/go-todo-service:0.2
+
+kubectl create deployment todo-service-node --image=akumar75/go-todo-service:0.2
+
+#https://kubernetes.io/docs/tutorials/hello-minikube/#create-a-deployment

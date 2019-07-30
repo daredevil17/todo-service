@@ -1,0 +1,9 @@
+version: '3'
+services:
+  go-todo-service-1:
+   build: .
+   ports:
+   - "9090:9090"
+   - "8080:8080"
+   - "7000:7000"
+   - "3306:3306"
