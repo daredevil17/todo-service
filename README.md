@@ -50,10 +50,9 @@ go run cmd/grpc/server/server-todo-main.go -grpc-port=9090 -http-port=8080 -db-h
 - view all running docker containers: docker ps -a
 
 - remove docker image
-<code>
+
 docker rm <container Id>
 docker rmi go-todo-service:0.1
-</code>
 
 - removing a pattern image
 
