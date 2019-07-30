@@ -93,6 +93,8 @@ kubectl get secret regcred --output=yaml
 
 https://kukulinski.com/10-most-common-reasons-kubernetes-deployments-fail-part-1/
 
+- Create deployment
+
 kubectl create deployment todo-service-node --image=akumar75/go-todo-service:0.2
 
 #https://kubernetes.io/docs/tutorials/hello-minikube/#create-a-deployment
