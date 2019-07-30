@@ -68,8 +68,22 @@ e.g.: docker run -it  go-todo-service:0.1
 - Image creation for docker hub
 docker image build --no-cache -t akumar75/go-todo-service:0.2 .
 
+- purging any unused or dangling images
+docker system prune -a
+
 - pushing image to docker hub
 docker push akumar75/go-todo-service:0.2
+
+# Kubernetes
+
+- creating secret based on existing Docker credentials
+kubectl create secret generic regcred --from-file=.dockerconfigjson=.docker/config.json --type=kubernetes.io/dockerconfigjson
+
+- Inspecting the Secret regcred
+kubectl get secret regcred --output=yaml
+
+- Most Common Reason kubernetes deployments fail
+https://kukulinski.com/10-most-common-reasons-kubernetes-deployments-fail-part-1/
 
 kubectl create deployment todo-service-node --image=akumar75/go-todo-service:0.2
 
