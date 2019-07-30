@@ -54,6 +54,7 @@ go run cmd/grpc/server/server-todo-main.go -grpc-port=9090 -http-port=8080 -db-h
 docker rm <container Id>
 docker rmi go-todo-service:0.1
 </code>
+
 - removing a pattern image
 
 docker ps -a | grep "<pattern" | awk '{print $2}' | xargs docker rmi
